@@ -1,13 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
 
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.wrapper}>
-        <Text style={styles.login}>Home</Text>
-        <Text style={styles.text}>Olá! Bom ver você de novo.</Text>
+        <Text style={styles.text}>Olá!</Text>
 
         <StatusBar style="auto" />
       </View>
@@ -21,17 +19,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
   },
-  wrapper: {
+  /*  wrapper: {
     height: 550,
     marginTop: 80,
     width: "80%",
-  },
-  login: {
-    fontSize: 20,
-    marginTop: 20,
-  },
+  }, */
   text: {
-    fontSize: 16,
+    fontSize: 44,
     marginTop: 10,
     color: "#989eb1",
   },

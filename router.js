@@ -3,6 +3,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
 import Home from "./screens/Home";
+import AddGain from "./screens/AddGain";
+import AddExpense from "./screens/AddExpense";
+import EditGain from "./screens/EditGain";
+import EditExpense from "./screens/EditExpense";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import CustomDrawer from "./components/CustomDrawer";
 
@@ -31,6 +35,42 @@ const Router = () => {
           }}
           name="Register"
           component={Register}
+        />
+
+        <Drawer.Screen
+          options={{
+            drawerItemStyle: { display: "none" },
+            headerShown: false,
+          }}
+          name="AddGain"
+          component={AddGain}
+        />
+
+        <Drawer.Screen
+          options={{
+            drawerItemStyle: { display: "none" },
+            headerShown: false,
+          }}
+          name="EditGain"
+          component={EditGain}
+        />
+
+        <Drawer.Screen
+          options={{
+            drawerItemStyle: { display: "none" },
+            headerShown: false,
+          }}
+          name="AddExpense"
+          component={AddExpense}
+        />
+
+        <Drawer.Screen
+          options={{
+            drawerItemStyle: { display: "none" },
+            headerShown: false,
+          }}
+          name="EditExpense"
+          component={EditExpense}
         />
       </Drawer.Navigator>
     </NavigationContainer>
