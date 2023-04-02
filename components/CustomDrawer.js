@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, Image, TouchableOpacity } from "react-native";
 import Profile from "../components/Profile";
 import ButtonDrawer from "../components/ButtonDrawer";
+import ButtonDrawerEmoji from "../components/ButtonDrawerEmoji";
 
 function CustomDrawer({ navigation, ...props }) {
   return (
@@ -26,6 +27,20 @@ function CustomDrawer({ navigation, ...props }) {
             iconColor="white"
             title={"Inserir ganhos"}
             onPress={() => navigation.navigate("AddGain")}
+          />
+
+          <ButtonDrawerEmoji
+            iconName="emoji-happy"
+            iconColor="white"
+            title={"Visualizar ganhos"}
+            onPress={() => navigation.navigate("ViewGain")}
+          />
+
+          <ButtonDrawerEmoji
+            iconName="emoji-sad"
+            iconColor="white"
+            title={"Visualizar despesas"}
+            onPress={() => navigation.navigate("ViewExpense")}
           />
 
           <ButtonDrawer
@@ -57,7 +72,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   body: {
-    height: "24%",
+    height: "32%",
     width: "100%",
     alignItems: "center",
     justifyContent: "space-around",

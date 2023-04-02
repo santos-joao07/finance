@@ -7,6 +7,8 @@ import AddGain from "./screens/AddGain";
 import AddExpense from "./screens/AddExpense";
 import EditGain from "./screens/EditGain";
 import EditExpense from "./screens/EditExpense";
+import ViewGain from "./screens/ViewGain";
+import ViewExpense from "./screens/ViewExpense";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import CustomDrawer from "./components/CustomDrawer";
 
@@ -71,6 +73,24 @@ const Router = () => {
           }}
           name="EditExpense"
           component={EditExpense}
+        />
+
+        <Drawer.Screen
+          options={{
+            drawerItemStyle: { display: "none" },
+            headerShown: false,
+          }}
+          name="ViewGain"
+          component={ViewGain}
+        />
+
+        <Drawer.Screen
+          options={{
+            drawerItemStyle: { display: "none" },
+            headerShown: false,
+          }}
+          name="ViewExpense"
+          component={ViewExpense}
         />
       </Drawer.Navigator>
     </NavigationContainer>
